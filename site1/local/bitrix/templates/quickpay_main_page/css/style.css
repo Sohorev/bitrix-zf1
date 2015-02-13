@@ -1,0 +1,499 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+html {
+    height: 100%;
+}
+body {
+    min-width: 999px;
+    height: 100%;
+    margin: 0 auto;
+}
+.body {
+    width: 999px;
+    margin: 0 auto;
+}
+span {
+    font-family: Tahoma, Verdana;
+    font-size: 13px;
+    color: black;
+}
+header {
+    width: 999px;
+    margin: 0 auto;
+}
+.logo {
+    float: left;
+    margin: 40px 0 0 0;
+}
+.country {
+    float: left;
+    margin: 50px 0 0 10px;
+}
+.country a, .slidetext a {
+    font-family: Tahoma, Verdana;
+    font-size: 14px;
+    text-decoration: none;
+    color: #48bae4;
+    border-bottom: 1px dashed #48bae4;
+}
+.country span {
+    font-family: Tahoma, Verdana;
+    font-size: 11px;
+    color: gray;
+    font-style: italic;
+}
+.phonenumber {
+    float: left;
+    margin: 62px 0 0 80px;
+    font-family: Tahoma, Verdana;
+    font-size: 26px;
+}
+.numberstart {
+    float: left;
+    color: gray;
+}
+.numberend {
+    float: left;
+    color: black;
+}
+.login {
+    float: left;
+    margin: 55px 0 0 95px;
+}
+.logintext {
+    position: relative;
+    margin: -32px 0 0 50px;
+}
+.whitetext {
+    color: white;
+}
+.jms-left-right {
+    width: 999px;
+    margin: 0 auto;
+}
+.jms-left {
+    float: left;
+    width: 452px;
+}
+.jms-right {
+    float: left;
+    width: 547px;
+}
+.jms-right-block {
+    position: relative;
+    margin: 110px 0 0 50px;
+    font-size: 14px;
+}
+.jms-right-block-text {
+    font-family: Tahoma, Verdana;
+    font-size: 26px;
+    color: white;
+}
+.jms-right-block-href {
+    font-family: Tahoma, Verdana;
+    font-size: 20px;
+    color: white;
+}
+.process {
+    width: 999px;
+    margin: 10px auto 0;
+}
+.logos {
+    float: left;
+    margin: 0 0 50px 0;
+}
+.processing {
+    float: left;
+    width: 500px;
+    margin: 0 0 0 105px;
+}
+.processingtext {
+    font-family: Tahoma, Verdana;
+    font-size: 26px;
+    text-decoration: underline;
+    color: black;
+}
+.processingpict {
+    float: left;
+    width: 99px;
+    margin: 20px 20px 0 0;
+    text-align: center;
+}
+.blackhref {
+    font-family: Tahoma, Verdana;
+    font-size: 13px;
+    color: black;
+    text-decoration: none;
+    margin-right: 10px;
+}
+.blackhref.selected, .blackhref:hover {
+    font-family: Tahoma, Verdana;
+    font-size: 13px;
+    color: #fa8e4a;
+    text-decoration: none;
+}
+.menuhrefs {
+    text-align: right;
+    padding: 0 0 20px 0;
+}
+.menuhref {
+    font-family: Tahoma, Verdana;
+    font-size: 13px;
+    color: black;
+    padding: 0 20px 0 0;
+}
+.moreinfo {
+    width: 150px;
+    height: 40px;
+    margin: 20px 0 0 0;
+    background-color: transparent;
+    border-top: 2px solid gray;
+    border-left: 1px solid black;
+    border-right: 3px double black;
+    border-bottom: 3px double gray;
+    border-radius: 5px;
+    font-family: Tahoma, Verdana;
+    font-size: 18px;
+    text-decoration: underline;
+    color: black;
+}
+.moreinfo:hover {
+    text-decoration: none;
+}
+.paymentsystemleft {
+    float: left;
+    width: 50%;
+    height: 375px;
+}
+.paymentsystemright {
+    float: left;
+    width: 50%;
+    height: 375px;
+}
+.paymentsystem {
+    position: relative;
+    height: 375px;
+    margin: -375px 0 0 0;
+}
+.paymentsystemin {
+    position: relative;
+    width: 999px;
+    height: 375px;
+    margin: -375px auto 0;
+}
+.paymentsystemblock {
+    position: relative;
+    float: left;
+    width: 500px;
+    margin: -295px 0 0 0;
+}
+.paymentsystemtext {
+    font-family: Tahoma, Verdana;
+    font-size: 26px;
+    text-decoration: underline;
+    color: white;
+}
+.moreinfo2 {
+    width: 150px;
+    height: 40px;
+    margin: 20px 0 0 0;
+    background-color: transparent;
+    border-top: 2px solid #afd6ed;
+    border-left: 1px solid white;
+    border-right: 3px double white;
+    border-bottom: 3px double #afd6ed;
+    border-radius: 5px;
+    font-family: Tahoma, Verdana;
+    font-size: 18px;
+    text-decoration: underline;
+    color: white;
+}
+.moreinfo2:hover {
+    text-decoration: none;
+}
+.icons {
+    float: right;
+    margin: -345px 0 0 0;
+}
+footer {
+    height: 137px;
+    background: #4289b5;
+}
+.footer {
+    width: 999px;
+    margin: 0 auto;
+}
+.sitetext {
+    float: left;
+    margin: 50px 0 0 0;
+}
+.find {
+    float: left;
+    margin: 40px 0 0 335px;
+}
+.search {
+    width: 372px;
+    height: 36px;
+    padding: 0 0 0 10px;
+    background-color: transparent;
+    border: solid;
+    border-width: 1px;
+    border-radius: 0px;
+    border-color: white;
+    color: white;
+    font-family: Tahoma, Verdana;
+    font-size: 14px;
+}
+.loupediv {
+    margin: -26px 0 0 350px;
+}
+.loupe {
+    width: 18px;
+    height: 15px;
+}
+.headtext {
+    width: 999px;
+    margin: 0 auto;
+    font-family: Tahoma, Verdana;
+    font-size: 32px;
+    color: black;
+}
+.slidepicttext {
+    width: 999px;
+    margin: 0 auto;
+}
+.slidetextpict {
+    background-color: #f2f2f2;
+    border: 1px solid #d6d6d6;
+    height: 280px;
+}
+.slidepict {
+    float: left;
+    width: 40%;
+    margin: 20px 0 0 0;
+}
+.slidetext {
+    float: left;
+    width: 60%;
+    margin: 20px 0 0 0;
+    font-family: Tahoma, Verdana;
+    font-size: 20px;
+}
+.connect {
+    padding: 20px 0 0 0;
+    text-align: center;
+    color: black;
+    font-family: Tahoma, Verdana;
+    font-size: 14px;
+}
+.connect div {
+    padding: 30px 0 20px 0;
+    font-family: Tahoma, Verdana;
+    font-size: 14px;
+}
+.connectbutton {
+    padding: 14px 55px;
+    color: white;
+    font-family: Tahoma, Verdana;
+    font-size: 18px;
+    text-decoration: underline;
+    background-color: #ef7d25;
+}
+.downmenu {
+    height: 306px;
+    margin: 30px 0 0 0;
+    background: url("../images/grayfone.png");
+}
+header nav {
+    padding: 20px 0;
+    text-align: center;
+}
+.downmenu nav {
+    width: 999px;
+    margin: 0 auto;
+}
+.downmenuitem {
+    float: left;
+    margin: 0 67px 0 67px;
+    text-align: center;
+}
+.downmenuitem div {
+    margin: 30px 0 0 0;
+}
+.blackbighref {
+    font-family: Tahoma, Verdana;
+    font-size: 20px;
+    color: black;
+}
+.blackbighref:hover {
+    font-family: Tahoma, Verdana;
+    font-size: 20px;
+    color: #fa8e4a;
+    text-decoration: none;
+}
+.formfone {
+    background: #eaeaea;
+    background: linear-gradient(to right, #eaeaea 47%, #f2f2f2 47%, #f2f2f2 47%);
+    border: 1px solid #d6d6d6;
+}
+.formtest {
+    width: 999px;
+    margin: 0 auto;
+}
+.formtestleft {
+    float: left;
+    width: 49%;
+    padding: 20px 0;
+    background: url("../images/strelka.png") repeat-y 100% 50%;
+}
+.formtestcenter {
+    float: left;
+    width: 2%;
+    height: 1px;
+}
+.formtestright {
+    float: left;
+    width: 49%;
+    padding: 20px 0;
+}
+.number {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px 10px 0;
+    float: left;
+    background-color: #a1a1a1;
+    border-radius: 15px;
+}
+.number div {
+    text-align: center;
+    color: white;
+    font-family: Tahoma, Verdana;
+    font-size: 16px;
+    padding: 6px 0 0 0;
+}
+.forminput input {
+    float: left;
+    background-color: white;
+    border-color: #9b9b9b;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    color: gray;
+    font-family: Tahoma, Verdana;
+    font-size: 13px;
+    margin: 10px 0 0 0;
+    padding: 0 0 0 10px;
+    width: 400px;
+    height: 48px;
+}
+.forminputcaptcha input {
+    float: left;
+    background-color: white;
+    border-color: #9b9b9b;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    color: gray;
+    font-family: Tahoma, Verdana;
+    font-size: 13px;
+    margin: 10px 0 0 0;
+    padding: 0 0 0 10px;
+    width: 238px;
+    height: 48px;
+}
+.phonetext {
+    color: gray;
+    padding: 0 0 0 10px;
+    font-family: Tahoma, Verdana;
+    font-size: 14px;
+}
+.captcha img {
+    float: left;
+    width: 157px;
+    height: 48px;
+    margin: 10px 0 0 5px;
+}
+.sendbutton input {
+    width: 212px;
+    height: 52px;
+    margin: 20px 0 0 0;
+    color: white;
+    font-family: Tahoma, Verdana;
+    font-size: 18px;
+    text-decoration: underline;
+    background-color: #ef7d25;
+}
+.wave {
+    width: 999px;
+    height: 10px;
+    margin: 0 auto;
+    background: url("../images/wave.png");
+}
+.menuhref {
+    text-align: right;
+    padding: 0 20px 0 0;
+}
+.container {
+    position: relative;
+    height: 405px;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.dogovor {
+    background: #ececec;
+    background: linear-gradient(to right, #ececec 50%, #f2f2f2 50%, #f2f2f2 50%);
+    border: 1px solid #d6d6d6;
+}
+.dogovorblock {
+    width: 999px;
+    margin: 0 auto;
+}
+.dogovorblock ul {
+    color: #77aaca;
+    margin-left: 15px;
+}
+.dogovorleft {
+    float: left;
+    width: 35%;
+    height: 230px;
+    padding: 30px 0;
+    background-color: #ececec;
+}
+.dogovorleft div {
+    text-align: center;
+}
+.dogovorcenter {
+    float: left;
+    width: 30%;
+    height: 230px;
+    padding: 30px 0;
+    background-color: #ededed;
+}
+.dogovorcenter div {
+    text-align: center;
+}
+.dogovorright {
+    float: left;
+    width: 35%;
+    height: 230px;
+    padding: 30px 0;
+    background-color: #f2f2f2;
+}
+.dogovor a, .formtest a {
+    font-family: Tahoma, Verdana;
+    font-size: 13px;
+    text-decoration: none;
+    color: #48bae4;
+}
+.leftblock {
+    float: left;
+    width: 45%;
+    padding: 0 40px 0 0;
+}
+.advertplace {
+    float: left;
+    width: 33%;
+    text-align: center;
+}

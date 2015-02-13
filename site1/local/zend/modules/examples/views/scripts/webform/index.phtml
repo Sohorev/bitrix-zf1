@@ -1,0 +1,12 @@
+<?
+$APPLICATION = Zend_Registry::get('BX_APPLICATION');
+$APPLICATION->IncludeComponent("bitrix:main.include", ".default", [
+    "AREA_FILE_SHOW" => "file",
+    "PATH" => SITE_DIR . "include/telephone.php",
+    "EDIT_TEMPLATE" => ""
+    ], false
+);?>
+
+Form text
+
+<?= $this->form ?>

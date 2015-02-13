@@ -1,0 +1,85 @@
+.floor-1 {
+    background: url("../images/slide1.png") no-repeat scroll 50% 50%;
+}
+.floor-2 {
+    background: url("../images/slide2.png") no-repeat scroll 50% 50%;
+}
+.floor-3 {
+    background: url("../images/slide3.png") no-repeat scroll 50% 50%;
+}
+ul {
+    list-style: none;
+}
+li a {
+    display: inline-block;
+}
+li a:hover {
+    cursor: pointer;
+}
+.links-to-floor {
+    position: relative;
+    float: right;
+    top: 370px;
+}
+.links-to-floor li {
+    float: left;
+    width: 10px;
+    height: 10px;
+    margin: 0 3px;
+    border: 1px solid white;
+    background: #8c8c8c;
+}
+.links-to-floor .selected {
+    margin: -3px 3px 0 3px;
+    border: 4px solid #8c8c8c;
+    background: transparent;
+}
+.links-to-floor li:hover {
+    cursor: pointer;
+}
+.prev-next-links {
+    position: relative;
+    top: 155px;
+}
+.prev {
+    float: left;
+    margin-left: 2px;
+}
+.next {
+    float: left;
+    margin: -67px 0 0 100%;
+}
+.next a {
+    margin-left: -20px;
+}
+.direction-links li a {
+    border-radius: 0;
+}
+.up {
+    position: absolute;
+    bottom: 75px;
+    right: 50px;
+}
+.down {
+    position: absolute;
+    bottom: 25px;
+    right: 50px;
+}
+.left {
+    position: absolute;
+    bottom: 50px;
+    right: 60px;
+}
+.right {
+    position: absolute;
+    bottom: 50px;
+    right: 32px;
+}
+.selected a {
+    color: white;
+    background: #4fade3;
+}
+.selected a:hover {
+    color: white;
+    background: #4fade3;
+}

@@ -1,0 +1,27 @@
+<?
+/**
+ * @var Zend_View $this
+ * @var Zend_View_Helper_Url $this->url
+ */
+
+// Управление записями в режиме редактирования
+$entityId = 'news_detail_' . $this->element['ID'];
+$component = new CBitrixComponent();
+$component->AddEditAction($entityId, $this->element['EDIT_LINK'], CIBlock::GetArrayByID($this->element['IBLOCK_ID'], 'ELEMENT_EDIT'));
+$component->AddDeleteAction($entityId, $this->element['DELETE_LINK'], CIBlock::GetArrayByID($this->element['IBLOCK_ID'], 'ELEMENT_DELETE'), array('CONFIRM' => 'Подтверждаете удаление новости?'));
+?>
+<div class="news">
+    <div class="detail" id="<? $component->GetEditAreaId($entityId);?>">
+        <h2><?= $this->element['NAME']?> <span class="date-detail">(<?= $this->news()->formatDate($this->element['DATE_ACTIVE_FROM']) ?>)</span></h2>
+        <? if (isset($this->element['PREVIEW_PICTURE']) && !empty($this->element['PREVIEW_PICTURE'])) :?>
+            <img src="<?= $this->news()->imageDetail($this->element['PREVIEW_PICTURE']);?>" alt="<?= $this->element['NAME']?>" class='image-detail' />
+        <? endif?>
+        <div class="content">
+            <?= $this->element['DETAIL_TEXT']?>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="ret-link">
+        &larr; <a href="<?= $this->url(array(), 'news', true)?>">Список новостей</a>
+    </div>
+</div>

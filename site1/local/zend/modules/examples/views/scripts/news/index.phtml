@@ -1,0 +1,33 @@
+<?
+/**
+ * @var Zend_View $this
+ * @var Zend_View_Helper_Url $this->url
+ */
+?>
+<div class="news">
+    <?
+    $component = new CBitrixComponent();
+
+    foreach ($this->newsList as $element) :
+        // Управление записями в режиме редактирования
+        $entityId = 'news_list_' . $element['ID'];
+        $component->AddEditAction($entityId, $element['EDIT_LINK'], CIBlock::GetArrayByID($element['IBLOCK_ID'], 'ELEMENT_EDIT'));
+        $component->AddDeleteAction($entityId, $element['DELETE_LINK'], CIBlock::GetArrayByID($element['IBLOCK_ID'], 'ELEMENT_DELETE'), array('CONFIRM' => 'Подтверждаете удаление новости?'));
+    ?>
+    <div class="news-item" id="<?= $component->GetEditAreaId($entityId);?>">
+        <h2><a href="<?= $this->url(array('elementId' => $element['ID']), 'newsDetail', true) ?>"><?= $element['NAME']?></a></h2>
+        <? if (isset($element['PREVIEW_PICTURE']) && !empty($element['PREVIEW_PICTURE'])) :?>
+            <img src="<?= $this->news()->imagePreview($element['PREVIEW_PICTURE']);?>" alt="<?= $element['NAME']?>" class='image-preview' />
+        <? endif?>
+        <div class="informer">
+            <div class="date"><?= $this->news()->formatDate($element['DATE_ACTIVE_FROM']) ?></div>
+            <div class="text">
+                <?= $element['PREVIEW_TEXT'] ?>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <? endforeach; ?>
+</div>
+
+<?= $this->pager; ?>
